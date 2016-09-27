@@ -1,6 +1,6 @@
 @media only screen and (max-device-width: 700px), only screen and (max-width: 800px) {
   div#container {
-    width: 100vw;
+    width: 98vw;
     height: 98vh;
     margin: 0;
     padding: 0; }
