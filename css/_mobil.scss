@@ -45,7 +45,14 @@
       }
 
     }
-
+    &:first-child{
+      white-space:nowrap;
+      order:1;
+      flex: 0 1 auto;
+      text-overflow: ellipsis;
+      overflow:hidden;
+      min-width:0;
+    }
   }
   main{
     display: flex;
@@ -73,6 +80,7 @@
     background: $headerfarge;
     color: white;
   }
+
 }
 @media only screen and (max-device-width: 700px){
   #container{
