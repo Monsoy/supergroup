@@ -1,0 +1,100 @@
+@media only screen and (max-device-width: 700px), only screen and (max-width: 800px){
+  $headerfarge: #333;
+  div#container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  header#overskrift{
+    display: flex;
+    justify-content: space-between;
+    background-color: $headerfarge;
+    padding: 0 20px;
+    border-bottom: 1px solid white;
+
+    h1{
+      color: white;
+      font-size: 40px;
+    }
+    h2{
+      color: white;
+    }
+  }
+  nav#navigasjon{
+    margin-top: -17px;
+    ul{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #555;
+      li{
+        flex: 1 1 0;
+        margin: 10px 0;
+        a{
+          text-decoration: none;
+          color: #fff;
+          padding: 10px;
+          //display: block;
+          &:hover{
+            background: #777;
+          }
+        }
+      }
+
+    }
+
+  }
+  main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    border: 1px solid black;
+    section{
+      flex: 1 1 0;
+      order: 0;
+      border: 1px solid black;
+      padding: 5px 10px;
+    }
+    article{
+      flex: 1 1 0;
+      order: 1;
+      border: 1px solid black;
+      padding: 5px 10px;
+    }
+  }
+  footer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background: $headerfarge;
+    color: white;
+  }
+}
+@media only screen and (max-device-width: 700px){
+  #container{
+    header#overskrift{
+      h1{
+        font-size: 80px;
+        hide{
+          display: none;
+        }
+      }
+    }
+    nav#navigasjon{
+      li{
+        font-size: 40px;
+      }
+    }
+    main{
+      section, article{
+        p{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

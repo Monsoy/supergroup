@@ -1,0 +1,250 @@
+@media only screen and (max-device-width: 700px), only screen and (max-width: 800px) {
+  div#container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  header#overskrift {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #333;
+    padding: 0 20px;
+    border-bottom: 1px solid white;
+  }
+  header#overskrift h1 {
+    color: white;
+    font-size: 40px;
+  }
+  header#overskrift h2 {
+    color: white;
+  }
+
+  nav#navigasjon {
+    margin-top: -17px;
+  }
+  nav#navigasjon ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #555;
+  }
+  nav#navigasjon ul li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+            flex: 1 1 0;
+    margin: 10px 0;
+  }
+  nav#navigasjon ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+  nav#navigasjon ul li a:hover {
+    background: #777;
+  }
+
+  main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px solid black;
+  }
+  main section {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+            flex: 1 1 0;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+    border: 1px solid black;
+    padding: 5px 10px;
+  }
+  main article {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+            flex: 1 1 0;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    border: 1px solid black;
+    padding: 5px 10px;
+  }
+
+  footer {
+    width: 100vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    background: #333;
+    color: white;
+  }
+}
+@media only screen and (max-device-width: 700px) {
+  #container header#overskrift h1 {
+    font-size: 80px;
+  }
+  #container header#overskrift h1 hide {
+    display: none;
+  }
+  #container nav#navigasjon li {
+    font-size: 40px;
+  }
+  #container main section p, #container main article p {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  div#container {
+    width: 98.5vw;
+    height: 100vh;
+  }
+
+  header#overskrift {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #333;
+    padding: 0 20px;
+    border-bottom: 1px solid white;
+  }
+  header#overskrift h1 {
+    color: white;
+    font-size: 40px;
+  }
+  header#overskrift h2 {
+    color: white;
+    margin-right: 40px;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+  }
+
+  nav#navigasjon {
+    margin-top: -17px;
+  }
+  nav#navigasjon ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #555;
+  }
+  nav#navigasjon ul li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+            flex: 1 1 0;
+    margin: 10px 0;
+  }
+  nav#navigasjon ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+  nav#navigasjon ul li a:hover {
+    background: #777;
+  }
+
+  main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    width: 98.5vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: 1px solid black;
+  }
+  main section {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+            flex: 1 1 0;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+    border: 1px solid black;
+  }
+  main article {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+            flex: 1 1 0;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    border: 1px solid black;
+  }
+
+  footer {
+    width: 98.5vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    background: #333;
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
