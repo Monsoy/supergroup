@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="test.css">
+  <script type="text/javascript">
+  function menu() {
+  document.getElementById("nav").style.width = "250px";
+  document.getElementById("content").style.marginLeft = "250px";
+}
+
+function navslide() {
+  document.getElementById("nav").style.width = "0";
+  document.getElementById("content").style.marginLeft = "0";
+}
+
+  </script>
+  </head>
+  <body>
+
+
+    <nav id="nav">
+      <a href="javascript:void(0)" id="btn" onclick="navslide()">&times;</a>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+  </ul>
+
+
+
+    </nav>
+<span onclick="menu()"> Menu </span>
+
+<article id="content">
+  ------
+</article>
+
+  </body>
+</html>
