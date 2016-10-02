@@ -1,0 +1,140 @@
+@media only screen and (max-device-width: 700px), only screen and (max-width: 800px){
+  $headerfarge: #333;
+  div#container{
+    width: 98vw;
+    height: 98vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  header#overskrift{
+    display: flex;
+    justify-content: space-between;
+    background-color: $headerfarge;
+    padding: 0 20px;
+    border-bottom: 1px solid white;
+    width: 93.1vw;
+
+    h1{
+      color: white;
+      font-size: 40px;
+    }
+    h2{
+      color: white;
+    }
+  }
+  nav#navigasjon{
+  margin-top: 0px;
+  position: relative;
+  display: inline-block;
+
+    #menubtn{
+      width: 98.6vw;
+      padding: 0 0 0 0;
+      margin-top: 0px;
+      border: 1px solid;
+      flex: 1 0 auto;
+      font-size: 30px;
+      align-self: center;
+
+    }
+    ul{
+      list-style: none;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      background-color: #555;
+      margin-top: 0px;
+      height: 0vh;
+      display: none;
+      position: absolute;
+      li{
+        flex: 1 1 0;
+        margin-left: -40px;
+        a{
+          text-decoration: none;
+          color: #fff;
+          padding: 10px;
+          display: flex;
+          width: 95.6vw;
+          background-color: #777;
+          border-bottom: 1px solid;
+          justify-content: center;
+          &:hover{
+            background: #333;
+          }
+        }
+      }
+    }
+  .show {display:block;}
+
+
+    &:first-child{
+      white-space:nowrap;
+      order:1;
+      flex: 0 1 auto;
+      text-overflow: ellipsis;
+      overflow:hidden;
+      min-width:0;
+    }
+  }
+  main{
+    display: flex;
+    height: 100vh;
+    width: 98vw;
+    flex-direction: column;
+  //  border: 1px solid black;
+    section{
+      flex: 1 1 0;
+      order: 0;
+      border: 1px solid black;
+      padding: 5px 10px;
+      margin-top: 2px;
+      width: 50vw;
+      align-self: center;
+    }
+    article{
+      flex: 1 1 0;
+      order: 1;
+      border: 1px solid black;
+      padding: 5px 10px;
+      margin-top: 2px;
+
+      width: 50vw;
+      align-self: center;
+    }
+  }
+  footer{
+    width: 98.3vw;
+    display: flex;
+    justify-content: space-around;
+    background: $headerfarge;
+    color: white;
+    margin-top: 2px;
+  }
+
+}
+@media only screen and (max-device-width: 700px){
+  #container{
+    header#overskrift{
+      h1{
+        font-size: 80px;
+        hide{
+          display: none;
+        }
+      }
+    }
+    nav#navigasjon{
+      li{
+        font-size: 40px;
+      }
+    }
+    main{
+      section, article{
+        p{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
