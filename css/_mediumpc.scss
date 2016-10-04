@@ -71,10 +71,16 @@
       order: 1;
       border: 2px solid black;
     }
+  //For flex box
+    aside{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
   }
   footer{
     margin: 0 auto;
-    width: 98.5vw;
+    width: 97vw;
     display: flex;
     justify-content: space-around;
     background: $headerfarge;
