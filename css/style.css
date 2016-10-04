@@ -1,6 +1,6 @@
 @media only screen and (max-device-width: 700px), only screen and (max-width: 809px) {
   div#container {
-    width: 98vw;
+    width: 96vw;
     height: 98vh;
     margin: 0;
     padding: 0;
@@ -18,6 +18,7 @@
     background-color: #333;
     padding: 0 20px;
     border-bottom: 1px solid white;
+    margin: 0 auto;
   }
   header#overskrift h1 {
     color: white;
@@ -42,6 +43,7 @@
   }
 
   nav#navigasjon {
+    margin: 0 auto;
     margin-top: -17px;
     margin-bottom: 10px;
   }
@@ -104,13 +106,14 @@
     display: -ms-flexbox;
     display: flex;
     height: 100vh;
-    width: 98vw;
+    width: 96vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     border: 1px solid black;
+    margin: 0 auto;
   }
   main section {
     -webkit-box-flex: 5;
@@ -138,7 +141,7 @@
   }
 
   footer {
-    width: 98.3vw;
+    width: 96.3vw;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -148,6 +151,7 @@
             justify-content: space-around;
     background: #333;
     color: white;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-device-width: 700px) {
@@ -163,7 +167,7 @@
 }
 @media only screen and (min-width: 810px) {
   div#container {
-    width: 98.5vw;
+    width: 97vw;
     height: 100vh;
   }
 
@@ -179,6 +183,7 @@
     background-color: #333;
     padding: 0 20px;
     border-bottom: 1px solid white;
+    margin: 0 auto;
   }
   header#overskrift h1 {
     color: white;
@@ -193,6 +198,7 @@
   }
 
   nav#navigasjon {
+    margin: 0 auto;
     margin-top: -17px;
     background-color: #555;
   }
@@ -234,12 +240,13 @@
   }
 
   main {
+    margin: 0 auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     height: 100vh;
-    width: 98.5vw;
+    width: 97vw;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -271,6 +278,7 @@
   }
 
   footer {
+    margin: 0 auto;
     width: 98.5vw;
     display: -webkit-box;
     display: -webkit-flex;
