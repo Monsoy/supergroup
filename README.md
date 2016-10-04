@@ -1,2 +1,2 @@
 # supergroup
-Ditte, Mica, Harald og Fredrik sitt prosjekt. 
+André, Mica, Harald og Fredrik sitt prosjekt. 
