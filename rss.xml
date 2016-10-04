@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>YS Elektro hjemmeside</title>
+  <link>http://ask.hiof.no/~fredriem/webutvikling/oblig2/</link>
+  <description>En elektro bedrift</description>
+  <item>
+    <title>Tilbud vi har</title>
+    <description>Installering av varmepumpe</description>
+  </item>
+</channel>
+
+</rss>
