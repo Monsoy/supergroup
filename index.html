@@ -4,17 +4,32 @@
     <meta charset="utf-8">
     <title>Supergroup</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="script/jquery-3.1.1.min.js" charset="utf-8"></script>
+    <script>
+      $(document).ready(function(){
+
+        $('#btnDrop').on("click", function(){
+          $('#dropdown_content').toggleClass('drop_show');
+        });
+
+      });
+    </script>
   </head>
   <body>
     <div id="container">
       <header id="overskrift">
         <h2>Icon</h2>
-        <h1><hide>YS</hide> Elektromekanikk AS</h1>
+        <h1>YS Elektromekanikk AS</h1>
       </header>
 
       <nav id="navigasjon">
-        <ul>
-          <li>DROPDOWN MENU</li>
+        <ul class="dropdown">
+          <li>
+            <img id="btnDrop" src="img/menu.png" alt="Dropdown knapp">
+          </li>
+        </ul>
+        <ul id="dropdown_content">
           <li><a href="#">Hjem</a></li>
           <li><a href="#">Priser</a></li>
           <li><a href="#">Kontakt oss</a></li>
@@ -25,9 +40,10 @@
         <section>
           <p>section</p>
         </section>
-        <article>
-          <p>article</p>
-        </article>
+
+        <aside>
+          <p>aside</p>
+        </aside>
 
       </main>
 

@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 700px), only screen and (max-width: 800px){
+@media only screen and (max-device-width: 700px), only screen and (max-width: 809px){
   $headerfarge: #333;
   div#container{
     width: 98vw;
@@ -21,30 +21,6 @@
     h2{
       color: white;
     }
-  }
-  nav#navigasjon{
-    margin-top: -17px;
-    ul{
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #555;
-      li{
-        flex: 1 1 0;
-        margin: 10px 0;
-        a{
-          text-decoration: none;
-          color: #fff;
-          padding: 10px;
-          //display: block;
-          &:hover{
-            background: #777;
-          }
-        }
-      }
-
-    }
     &:first-child{
       white-space:nowrap;
       order:1;
@@ -54,6 +30,48 @@
       min-width:0;
     }
   }
+  nav#navigasjon{
+    margin-top: -17px;
+    margin-bottom: 10px;
+
+    .dropdown{
+      z-index: -1;
+      //margin-bottom: -16px;
+      border-bottom: 1px solid black;
+      display: flex;
+      padding-right: 10px;
+    }
+    img{
+      cursor: pointer;
+    }
+    .drop_show{
+      display: flex;
+      margin-top: -16px;
+    }
+    ul{
+      list-style: none;
+      display: none;
+      flex-direction: column;
+      align-items:flex-end;
+      background-color: #555;
+      padding-right: 10px;
+      li{
+        flex: 1 1 0;
+        margin: 10px 0;
+      }
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      font-size: 1.3em;
+      text-align: center;
+      padding: 15px 10px;
+      &:hover{
+        background: #777;
+      }
+    }
+  }
   main{
     display: flex;
     height: 100vh;
@@ -61,13 +79,13 @@
     flex-direction: column;
     border: 1px solid black;
     section{
-      flex: 1 1 0;
+      flex: 5 1 0;
       order: 0;
       border: 1px solid black;
       padding: 5px 10px;
     }
-    article{
-      flex: 1 1 0;
+    aside{
+      flex: 2 1 0;
       order: 1;
       border: 1px solid black;
       padding: 5px 10px;
@@ -80,16 +98,12 @@
     background: $headerfarge;
     color: white;
   }
-
 }
 @media only screen and (max-device-width: 700px){
   #container{
     header#overskrift{
       h1{
-        font-size: 80px;
-        hide{
-          display: none;
-        }
+        font-size: 2em;
       }
     }
     nav#navigasjon{

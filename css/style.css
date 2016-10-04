@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 700px), only screen and (max-width: 800px) {
+@media only screen and (max-device-width: 700px), only screen and (max-width: 809px) {
   div#container {
     width: 98vw;
     height: 98vh;
@@ -26,43 +26,7 @@
   header#overskrift h2 {
     color: white;
   }
-
-  nav#navigasjon {
-    margin-top: -17px;
-  }
-  nav#navigasjon ul {
-    list-style: none;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #555;
-  }
-  nav#navigasjon ul li {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 0;
-        -ms-flex: 1 1 0;
-            flex: 1 1 0;
-    margin: 10px 0;
-  }
-  nav#navigasjon ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-  }
-  nav#navigasjon ul li a:hover {
-    background: #777;
-  }
-  nav#navigasjon:first-child {
+  header#overskrift:first-child {
     white-space: nowrap;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
@@ -75,6 +39,63 @@
     text-overflow: ellipsis;
     overflow: hidden;
     min-width: 0;
+  }
+
+  nav#navigasjon {
+    margin-top: -17px;
+    margin-bottom: 10px;
+  }
+  nav#navigasjon .dropdown {
+    z-index: -1;
+    border-bottom: 1px solid black;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 10px;
+  }
+  nav#navigasjon img {
+    cursor: pointer;
+  }
+  nav#navigasjon .drop_show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -16px;
+  }
+  nav#navigasjon ul {
+    list-style: none;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    background-color: #555;
+    padding-right: 10px;
+  }
+  nav#navigasjon ul li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+            flex: 1 1 0;
+    margin: 10px 0;
+  }
+  nav#navigasjon a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 15px 10px;
+  }
+  nav#navigasjon a:hover {
+    background: #777;
   }
 
   main {
@@ -92,10 +113,10 @@
     border: 1px solid black;
   }
   main section {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 0;
-        -ms-flex: 1 1 0;
-            flex: 1 1 0;
+    -webkit-box-flex: 5;
+    -webkit-flex: 5 1 0;
+        -ms-flex: 5 1 0;
+            flex: 5 1 0;
     -webkit-box-ordinal-group: 1;
     -webkit-order: 0;
         -ms-flex-order: 0;
@@ -103,11 +124,11 @@
     border: 1px solid black;
     padding: 5px 10px;
   }
-  main article {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 0;
-        -ms-flex: 1 1 0;
-            flex: 1 1 0;
+  main aside {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2 1 0;
+        -ms-flex: 2 1 0;
+            flex: 2 1 0;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
         -ms-flex-order: 1;
@@ -131,10 +152,7 @@
 }
 @media only screen and (max-device-width: 700px) {
   #container header#overskrift h1 {
-    font-size: 80px;
-  }
-  #container header#overskrift h1 hide {
-    display: none;
+    font-size: 2em;
   }
   #container nav#navigasjon li {
     font-size: 40px;
@@ -143,7 +161,7 @@
     font-size: 30px;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 810px) {
   div#container {
     width: 98.5vw;
     height: 100vh;
@@ -176,6 +194,10 @@
 
   nav#navigasjon {
     margin-top: -17px;
+    background-color: #555;
+  }
+  nav#navigasjon .dropdown {
+    display: none;
   }
   nav#navigasjon ul {
     list-style: none;
@@ -183,30 +205,31 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #555;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  nav#navigasjon ul li {
+  nav#navigasjon li {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 0;
         -ms-flex: 1 1 0;
             flex: 1 1 0;
-    margin: 10px 0;
   }
-  nav#navigasjon ul li a {
+  nav#navigasjon a {
     text-decoration: none;
     color: #fff;
-    padding: 10px;
+    display: block;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 15px 10px;
   }
-  nav#navigasjon ul li a:hover {
+  nav#navigasjon a:hover {
     background: #777;
   }
 
@@ -222,29 +245,29 @@
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    border: 1px solid black;
   }
   main section {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 0;
-        -ms-flex: 1 1 0;
-            flex: 1 1 0;
+    -webkit-box-flex: 5;
+    -webkit-flex: 5 1 0;
+        -ms-flex: 5 1 0;
+            flex: 5 1 0;
     -webkit-box-ordinal-group: 1;
     -webkit-order: 0;
         -ms-flex-order: 0;
             order: 0;
     border: 1px solid black;
+    margin-right: 10px;
   }
-  main article {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 0;
-        -ms-flex: 1 1 0;
-            flex: 1 1 0;
+  main aside {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2 1 0;
+        -ms-flex: 2 1 0;
+            flex: 2 1 0;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
-    border: 1px solid black;
+    border: 2px solid black;
   }
 
   footer {
