@@ -87,6 +87,14 @@
       order: 0;
       border: 1px solid black;
       padding: 5px 10px;
+      
+      #gmap_canvas{
+        border: 3px solid black;
+        height: 300px;
+        width: 400px;
+        display: flex;
+        margin: auto;
+      }
     }
     aside{
       flex: 2 1 0;
