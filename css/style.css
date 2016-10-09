@@ -127,6 +127,12 @@
     border: 1px solid black;
     padding: 5px 10px;
   }
+  main section #gmap_canvas {
+        border: 3px solid black;
+        height: 300px;
+        width: 400px;
+        display: flex;
+        margin: auto; }
   main aside {
     -webkit-box-flex: 2;
     -webkit-flex: 2 1 0;
