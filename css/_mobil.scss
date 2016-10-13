@@ -93,6 +93,26 @@
       order: 1;
       border: 1px solid black;
       padding: 5px 10px;
+      display: flex;
+      div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid black;
+        margin: 5px;
+        align-items: center;
+        justify-content: space-between;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      header#tilbud{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 3px;
+      }
     }
   }
   footer{

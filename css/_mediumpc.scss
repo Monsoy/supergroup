@@ -1,5 +1,6 @@
 @media only screen and (min-width: 810px){
   $headerfarge: #333;
+
   div#container{
     width: 97vw;
     height: 100vh;
@@ -27,7 +28,6 @@
     margin: 0 auto;
     margin-top: -17px;
     background-color: #555;
-
     .dropdown{
       display: none;
     }
@@ -72,6 +72,19 @@
       order: 1;
       border: 2px solid black;
       padding: 5px 10px;
+      justify-content: space-around;
+      img{
+        width: 100%;
+        height: auto;
+      }
+      div{
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 3px;
+        text-align: center;
+        font-weight: bold;
+
+      }
     }
   //For flex box
     aside{
