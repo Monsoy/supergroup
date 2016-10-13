@@ -128,11 +128,15 @@
     padding: 5px 10px;
   }
   main section #gmap_canvas {
-        border: 3px solid black;
-        height: 300px;
-        width: 400px;
-        display: flex;
-        margin: auto; }
+    border: 3px solid black;
+    height: 300px;
+    width: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
   main aside {
     -webkit-box-flex: 2;
     -webkit-flex: 2 1 0;
