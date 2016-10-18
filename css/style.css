@@ -321,6 +321,16 @@
     margin-right: 10px;
     padding: 5px 10px;
   }
+  main section #gmap_canvas {
+    border: 3px solid black;
+    height: 500px;
+    width: 700px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
   main aside {
     -webkit-box-flex: 2;
     -webkit-flex: 2 1 0;
@@ -346,6 +356,10 @@
     margin-bottom: 3px;
     text-align: center;
     font-weight: bold;
+  }
+  main aside div img {
+    height: 120px;
+    width: 150px;
   }
   main aside {
     display: -webkit-box;
